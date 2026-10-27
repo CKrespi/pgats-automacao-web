@@ -1,0 +1,29 @@
+{
+  "name": "pgats-automacao-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test": "cypress run --headless",
+    "test:spec": "cypress run --spec",
+    "test:report": "cypress run --headless --reporter cypress-mochawesome-reporter --reporter-options reportDir=cypress/reports,charts=true,embeddedScreenshots=true,inlineAssets=true,saveAllAttempts=false"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CKrespi/pgats-automacao-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/CKrespi/pgats-automacao-web/issues"
+  },
+  "homepage": "https://github.com/CKrespi/pgats-automacao-web#readme",
+  "devDependencies": {
+    "cypress": "^15.21.1",
+    "cypress-mochawesome-reporter": "^3.8.4"
+  }
+}
